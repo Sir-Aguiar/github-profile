@@ -1,0 +1,17 @@
+.nav_container {
+  @apply w-full h-auto;
+  @apply flex flex-col items-end justify-center py-4;
+  @apply border-b-[1px] border-blue-marine;
+}
+
+.search {
+  @apply w-full max-w-[328px] h-[50px] relative;
+  @apply flex items-center;
+}
+
+.search input {
+  @apply w-full h-full;
+  @apply rounded-full bg-transparent border-2 border-light-white;
+  @apply flex items-center px-6;
+  @apply font-medium text-light-white;
+}

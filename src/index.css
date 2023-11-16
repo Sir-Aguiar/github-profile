@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  overflow-x: hidden;
+
+  @apply font-Montserrat;
+}
+
+#root {
+  min-height: 100%;
+  min-width: 100%;
+
+  @apply flex flex-col items-center;
+  @apply bg-background overflow-y-auto;
+}
+
+.home-page {
+  @apply w-desktop tablet:w-tablet mobile:w-mobile h-auto;
+  @apply flex flex-col gap-8;
+}
+
+.home-header {
+  @apply w-full h-auto min-h-[296px];
+  @apply flex flex-wrap items-center justify-between mobile:justify-center gap-16;
+  @apply text-light-white mobile:text-center;
+}
+
+.profile-pic {
+  @apply w-[296px] h-[296px];
+  @apply rounded-2xl;
+  @apply border-2 border-blue-marine p-1;
+}
+
+.profile-description {
+  @apply h-[296px] w-full max-w-[328px] max-h-[296px];
+  @apply flex flex-col items-center justify-between;
+}
+
+.profile-infos {
+  @apply h-auto w-full desktop:max-w-[328px];
+  @apply flex flex-col items-center gap-3;
+  @apply desktop:self-start;
+}
+
+.home-main {
+  @apply w-full h-auto;
+  @apply flex flex-col gap-8;
+  @apply text-light-white;
+}
+
