@@ -48,6 +48,7 @@ const Home: React.FC = () => {
         (a: IRepository, b: IRepository) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime(),
       );
       setUserRepos([lastest[0], lastest[1], lastest[2]]);
+      document.title = `@${response.data?.login}`
     } catch (error: any) {
       alert(error.message);
     } finally {
